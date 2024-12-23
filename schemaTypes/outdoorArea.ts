@@ -14,8 +14,10 @@ export const outdoorArea = defineType({
         list: [
           {title: 'Landscaping', value: 'landscaping'},
           {title: 'Patio', value: 'patio'},
-          {title: 'Pool', value: 'pool'},
+          // {title: 'Pool', value: 'pool'},
           {title: 'Driveway', value: 'driveway'},
+          {title: 'Back yard', value: 'backYard'},
+          {title: 'Front yard', value: 'frontYard'},
           {title: 'Other', value: 'other'},
         ],
       },

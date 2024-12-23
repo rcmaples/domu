@@ -19,7 +19,7 @@ export const decor = defineType({
         ],
       },
     }),
-    defineField({name: 'brand', type: 'string', title: 'Brand', optional: true}),
+    defineField({name: 'brand', type: 'string', title: 'Brand'}),
     defineField({name: 'purchaseDate', type: 'date', title: 'Purchase Date'}),
     defineField({name: 'placeOfPurchase', type: 'string', title: 'Place of Purchase'}),
     defineField({name: 'notes', type: 'text', title: 'Notes'}),

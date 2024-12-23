@@ -14,36 +14,31 @@ export const room = defineType({
       options: {layout: 'tags'},
     }),
     defineField({name: 'dimensions', type: 'string', title: 'Dimensions'}),
-    defineField({
-      name: 'adjacentRooms',
-      type: 'array',
-      title: 'Adjacent Rooms',
-      of: [{type: 'reference', to: [{type: 'room'}]}],
-    }),
-    defineField({
-      name: 'ceilingDetails',
-      type: 'object',
-      title: 'Ceiling Details',
-      fields: [
-        defineField({name: 'paint', type: 'reference', to: [{type: 'paint'}], title: 'Paint'}),
-        defineField({name: 'features', type: 'text', title: 'Features'}),
-      ],
-    }),
-    defineField({
-      name: 'wallFeatures',
-      type: 'array',
-      title: 'Wall Features',
-      of: [
-        defineField({
-          type: 'object',
-          fields: [
-            defineField({name: 'description', type: 'string', title: 'Description'}),
-            defineField({name: 'location', type: 'string', title: 'Location'}),
-            defineField({name: 'notes', type: 'text', title: 'Notes'}),
-          ],
-        }),
-      ],
-    }),
+
+    // defineField({
+    //   name: 'ceilingDetails',
+    //   type: 'object',
+    //   title: 'Ceiling Details',
+    //   fields: [
+    //     defineField({name: 'paint', type: 'reference', to: [{type: 'paint'}], title: 'Paint'}),
+    //     defineField({name: 'features', type: 'text', title: 'Features'}),
+    //   ],
+    // }),
+    // defineField({
+    //   name: 'wallFeatures',
+    //   type: 'array',
+    //   title: 'Wall Features',
+    //   of: [
+    //     defineField({
+    //       type: 'object',
+    //       fields: [
+    //         defineField({name: 'description', type: 'string', title: 'Description'}),
+    //         defineField({name: 'location', type: 'string', title: 'Location'}),
+    //         defineField({name: 'notes', type: 'text', title: 'Notes'}),
+    //       ],
+    //     }),
+    //   ],
+    // }),
     defineField({name: 'notes', type: 'text', title: 'Notes'}),
     defineField({
       name: 'paint',

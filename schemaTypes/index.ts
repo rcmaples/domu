@@ -1,7 +1,7 @@
 import {appliance} from './appliance'
 import {fixture} from './fixture'
 import {house} from './house'
-import {outdoorArea} from './outdoorArea'
+// import {outdoorArea} from './outdoorArea'
 import {decor} from './decor'
 import {paint} from './paint'
 import {room} from './room'
@@ -13,7 +13,7 @@ export const schemaTypes = [
   appliance,
   decor,
   fixture,
-  outdoorArea,
+  // outdoorArea,
   paint,
   serviceRecord,
 ]

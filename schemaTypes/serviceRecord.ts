@@ -21,7 +21,7 @@ export const serviceRecord = defineType({
     }),
     defineField({name: 'description', type: 'text', title: 'Description'}),
     defineField({name: 'servicedBy', type: 'string', title: 'Serviced By'}),
-    defineField({name: 'cost', type: 'number', title: 'Cost', optional: true}),
+    defineField({name: 'cost', type: 'number', title: 'Cost'}),
     defineField({name: 'invoiceOrReceipt', type: 'file', title: 'Invoice or Receipt'}),
     defineField({name: 'notes', type: 'text', title: 'Notes'}),
     defineField({

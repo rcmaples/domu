@@ -16,7 +16,6 @@ export const appliance = defineType({
       name: 'energyStarRating',
       type: 'string',
       title: 'Energy Star Rating',
-      optional: true,
     }),
     defineField({name: 'notes', type: 'text', title: 'Notes'}),
     defineField({

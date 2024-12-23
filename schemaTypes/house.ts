@@ -30,21 +30,21 @@ export const house = defineType({
       title: 'Photo Gallery',
       of: [{type: 'image', options: {hotspot: true}}],
     }),
-    defineField({
-      name: 'historicalRecords',
-      type: 'array',
-      title: 'Historical Records',
-      of: [
-        defineField({
-          type: 'object',
-          fields: [
-            defineField({name: 'event', type: 'string', title: 'Event'}),
-            defineField({name: 'date', type: 'date', title: 'Date'}),
-            defineField({name: 'description', type: 'text', title: 'Description'}),
-          ],
-        }),
-      ],
-    }),
+    // defineField({
+    //   name: 'historicalRecords',
+    //   type: 'array',
+    //   title: 'Historical Records',
+    //   of: [
+    //     defineField({
+    //       type: 'object',
+    //       fields: [
+    //         defineField({name: 'event', type: 'string', title: 'Event'}),
+    //         defineField({name: 'date', type: 'date', title: 'Date'}),
+    //         defineField({name: 'description', type: 'text', title: 'Description'}),
+    //       ],
+    //     }),
+    //   ],
+    // }),
     defineField({name: 'notes', type: 'text', title: 'Notes'}),
     defineField({
       name: 'rooms',
